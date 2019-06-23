@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_iv"
+                android:src="@mipmap/x_bells"
+                android:layout_width="75dp"
+                android:layout_height="75dp" />
+            <TextView
+                android:id="@+id/room_id"
+                android:layout_gravity="center"
+                android:text="东区401"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="110dp">
+            <TextView
+                android:id="@+id/seat_avaible_account"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:text="可用空座：56"
+                android:textSize="16sp"
+                android:textColor="#080808"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/seat_total_account"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:textSize="16sp"
+                android:text="座位总数：256"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="#080808"/>
+    </LinearLayout>
+
+    </LinearLayout>
+

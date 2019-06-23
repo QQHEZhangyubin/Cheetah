@@ -1,0 +1,87 @@
+apply plugin: 'com.android.application'
+android {
+    useLibrary 'org.apache.http.legacy'
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.desk"
+        minSdkVersion 20
+        targetSdkVersion 28
+        versionCode 3
+        versionName "1.2"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk{
+            abiFilters 'armeabi-v7a','x86'
+        }
+    }
+    packagingOptions {//加上这写代码
+        exclude 'META-INF/rxjava.properties'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.android.support:design:27.1.0'
+    implementation 'com.android.support:recyclerview-v7:27.1.0'
+    implementation 'com.easyandroid:easytools:1.1.9'
+    implementation 'com.android.support:cardview-v7:24.2.1'
+    implementation 'com.github.xuexiangjys:XQRCode:1.0.0'
+    //上下拉刷新 SwipeToLoadLayout
+    implementation 'com.github.Aspsine:SwipeToLoadLayout:1.0.4'
+    implementation 'jp.wasabeef:glide-transformations:2.0.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    //Rxjava for android
+    implementation 'io.reactivex.rxjava2:rxjava:2.0.5'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    //implementation 'io.reactivex:rxandroid:1.1.0'
+    //implementation 'io.reactivex:rxjava:1.1.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:2.0.24'
+    implementation 'com.github.chrisbanes:PhotoView:2.0.0'
+    //photoview
+    // implementation 'com.github.chrisbanes:PhotoView:1.3.1'
+    implementation files('libs/universal-image-loader-1.9.3.jar')
+    implementation 'com.leon:lsettingviewlibrary:1.3.0'
+    implementation 'pub.devrel:easypermissions:2.0.1'
+    //图片选择器
+    implementation(project(':PhotoPicker')) {
+        // exclude group: 'com.android.support', module: 'recyclerview'
+        exclude group: 'com.github.bumptech.glide',
+                module: 'glide'
+    }
+    implementation 'com.mabeijianxi:small-video-record2:2.0.3@aar'
+    //加载进度条
+    implementation 'com.mikhaellopez:circularprogressbar:1.1.1'
+    //glide
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    //如果你的网络请求底层使用了Okhttp的话，那么可以指定这个让Glide网络层使用Okhttp
+    implementation('com.github.bumptech.glide:okhttp3-integration:1.4.0') {
+        exclude group: 'glide-parent'
+    }
+    //okhttp3日志拦截器
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    implementation files('libs/jsoup-1.12.1.jar')
+    implementation files('libs/httpclient-4.5.3.jar')
+    implementation 'com.qiniu:qiniu-android-sdk:7.3.15'
+
+}

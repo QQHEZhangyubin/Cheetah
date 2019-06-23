@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.desk">
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/appicon"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/appicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/NoActionAppTheme">
+
+        </activity>
+        <activity
+            android:name=".ui.SplashActivity"
+            android:theme="@style/NoActionAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mabeijianxi.smallvideorecord2.MediaRecorderActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.pulldshuoshuo.PulldshuoshuoActivity"
+            android:theme="@style/NoActionAppTheme" />
+        <activity
+            android:name=".ui.comment.CommentActivity"
+            android:theme="@style/NoActionAppTheme" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:launchMode="singleTask">
+
+        </activity>
+
+        <activity android:name=".ui.register.RegisterActivity" >
+
+        </activity>
+        <activity android:name=".ui.myinfo.MyinfoActivity" />
+        <activity
+            android:name=".ui.room.RoomActivity"
+            android:theme="@style/NoActionAppTheme" />
+        <activity android:name=".ui.ImagePagerActivity" />
+        <activity android:name=".ui.softupdate.SoftupdateActivity"/>
+        <service android:name=".service.DownloadIntentService"></service>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.desk.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name=".ui.circle.CircleActivity"
+            android:theme="@style/NoActionAppTheme"
+            android:configChanges="keyboard|keyboardHidden|screenSize"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".ui.ImagePagerActivity2"
+            android:theme="@style/NoActionAppTheme">
+        </activity>
+        <activity android:name=".ui.publish.PublishActivity"
+            android:theme="@style/NoActionAppTheme">
+        </activity>
+        <activity android:name="com.example.photopicker.PhotoPagerActivity">
+        </activity>
+        <activity android:name="com.example.photopicker.PhotoPickerActivity"
+            android:theme="@style/NoActionAppTheme">
+        </activity>
+        <activity android:name=".ui.publishvideo.PublishVideoActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionAppTheme">
+        </activity>
+        <activity android:name=".ui.webpreview.WebPreviewActivity"
+            android:theme="@style/NoActionAppTheme"
+            android:configChanges="keyboard|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".ui.publishurl.PublishUrlActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ui.videopreview.VideoPreviewActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.tiyu.TiyuActivity">
+
+        </activity>
+        <activity android:name=".room2.Room2Activity"
+            android:theme="@style/NoActionAppTheme" >
+
+        </activity>
+    </application>
+
+
+</manifest>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:leon="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="16dp"
+        android:background="#CDC8B1"
+        android:gravity="center"
+        android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/user_logo"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_width="2dp" />
+        <TextView
+            android:id="@+id/tv_xuehao2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="2016021051"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <com.leon.lib.settingview.LSettingItem
+        android:id="@+id/item_five_myinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        leon:leftIcon="@mipmap/jasd"
+        leon:leftText="齐大研友圈" />
+    <com.leon.lib.settingview.LSettingItem
+        android:id="@+id/item_one_myinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        leon:leftIcon="@mipmap/x_bookmark_user37"
+        leon:leftText="我的信息" />
+    <com.leon.lib.settingview.LSettingItem
+        android:id="@+id/item_two_myinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        leon:leftIcon="@mipmap/x_chair"
+        leon:leftText="当前状态" />
+
+    <com.leon.lib.settingview.LSettingItem
+        android:id="@+id/item_three_myinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        leon:leftIcon="@mipmap/x_clock01"
+        leon:leftText="取消今日预约" />
+
+    <com.leon.lib.settingview.LSettingItem
+        android:id="@+id/item_three_again_myinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        leon:leftIcon="@mipmap/x_coffee"
+        leon:leftText="取消明日预约" />
+
+    <!--
+    <com.leon.lib.settingview.LSettingItem
+        android:id="@+id/item_four_myinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        leon:leftIcon="@mipmap/x_night"
+        leon:leftText="结束使用" />
+-->
+    <com.leon.lib.settingview.LSettingItem
+        android:id="@+id/item_six_myinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        leon:leftIcon="@mipmap/x_channels"
+        leon:leftText="软件更新" />
+</LinearLayout>

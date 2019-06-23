@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorRadioButtonP">#D81B60</color>
+    <color name="colorRadioButtonN">#008577</color>
+    <color name="white">#ffffff</color>
+    <color name="iron">#CCCCCC</color>
+
+    <color name="praise_item">#8290AF</color>
+    <color name="alpha_toast">#c30d0c0c</color>
+    <color name="primary">#E43F3F</color>
+    <color name="transparent">#00000000</color>
+    <color name="default_clickable_color">#cccccc</color>
+    <color name="start_color">#337E83</color>
+    <color name="yalantis_eggplant">#663D4E</color>
+    <color name="red">#f5030f</color>
+    <color name="balck">#000000</color>
+    <color name="google_blue">#4285F4</color>
+    <color name="google_red">#EA4335</color>
+    <color name="google_green">#34A853</color>
+    <color name="google_yellow">#FBBC05</color>
+
+    <color name="praise_item_default">#333333</color>
+    <color name="praise_item_selector_default">#cccccc</color>
+    <!--footer背景色-->
+    <color name="footer_bg">#FAFAFA</color>
+    <color name="footer_text_color">#AAAAAA</color>
+    <color name="textColor">#cdcdcd</color>
+    <color name="black">#000000</color>
+    <color name="light_gray">#99a4b7</color>
+    <color name="deep_gray">#394257</color>
+    <color name="border_gray">#d9dfe5</color>
+    <color name="bg_gray">#e1e1e1</color>
+    <color name="btn_gray">#d1d1d1</color>
+    <color name="glass_gall">#c2ebef</color>
+    <color name="light_blue">#87d0f2</color>
+
+    <color name="scan_corner_color">#0effc2</color>
+
+    <color name="color_8290AF">#8290AF</color>
+    <color name="color_232323">#232323</color>
+    <color name="color_aeaeae">#aeaeae</color>
+    <color name="im_social_dig_name_bg">#DDDDDD</color>
+    <color name="im_font_color_text_hint">#abb1b6</color>
+    <color name="im_line_color">#dadada</color>
+    <color name="name_selector_color">#cccccc</color>
+    <color name="bg_no_photo">#EEEEEE</color>
+    <color name="title_bg">#373B3E</color>
+    <color name="video_bg">#ededed</color>
+</resources>

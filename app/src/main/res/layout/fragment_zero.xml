@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:text="图书馆座位预约"
+        android:textColor="@color/balck"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg_gray"></View>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/bg_gray"
+        app:cardUseCompatPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <LinearLayout
+                android:gravity="center"
+                android:background="@color/google_green"
+                android:layout_width="match_parent"
+                android:layout_height="145dp">
+                <TextView
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
+                    android:text="东区201"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/today_bt_1"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:text="今日"
+                android:layout_width="wrap_content"
+                android:background="@drawable/button_bg"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/tomorrow_bt_1"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="明日"
+                android:layout_width="wrap_content"
+                android:background="@drawable/button_bg2"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="8dp">
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/bg_gray"
+        app:cardUseCompatPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <LinearLayout
+                android:gravity="center"
+                android:background="@color/yalantis_eggplant"
+                android:layout_width="match_parent"
+                android:layout_height="145dp">
+                <TextView
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
+                    android:text="东区401"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/today_bt_2"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:text="今日"
+                android:layout_width="wrap_content"
+                android:background="@drawable/button_bg"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/tomorrow_bt_2"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="明日"
+                android:layout_width="wrap_content"
+                android:background="@drawable/button_bg2"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="8dp">
+    </LinearLayout>
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/bg_gray"
+        app:cardUseCompatPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <LinearLayout
+                android:gravity="center"
+                android:background="@color/praise_item"
+                android:layout_width="match_parent"
+                android:layout_height="145dp">
+                <TextView
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
+                    android:text="中区101"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/today_bt_3"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:text="今日"
+                android:layout_width="wrap_content"
+                android:background="@drawable/button_bg"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/tomorrow_bt_3"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="明日"
+                android:layout_width="wrap_content"
+                android:background="@drawable/button_bg2"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="8dp">
+    </LinearLayout>
+
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/bg_gray"
+        app:cardUseCompatPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <LinearLayout
+                android:gravity="center"
+                android:background="@color/google_yellow"
+                android:layout_width="match_parent"
+                android:layout_height="145dp">
+                <TextView
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
+                    android:text="中区201"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/today_bt_4"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:text="今日"
+                android:layout_width="wrap_content"
+                android:background="@drawable/button_bg"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/tomorrow_bt_4"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="明日"
+                android:layout_width="wrap_content"
+                android:background="@drawable/button_bg2"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="8dp">
+    </LinearLayout>
+
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/bg_gray"
+        app:cardUseCompatPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <LinearLayout
+                android:gravity="center"
+                android:background="@color/google_green"
+                android:layout_width="match_parent"
+                android:layout_height="145dp">
+                <TextView
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
+                    android:text="中区206"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/today_bt_5"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:text="今日"
+                android:layout_width="wrap_content"
+                android:background="@drawable/button_bg"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/tomorrow_bt_5"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="明日"
+                android:layout_width="wrap_content"
+                android:background="@drawable/button_bg2"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="8dp">
+    </LinearLayout>
+
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/bg_gray"
+        app:cardUseCompatPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <LinearLayout
+                android:gravity="center"
+                android:background="@color/colorRadioButtonP"
+                android:layout_width="match_parent"
+                android:layout_height="145dp">
+                <TextView
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
+                    android:text="中区211"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/today_bt_6"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:text="今日"
+                android:layout_width="wrap_content"
+                android:background="@drawable/button_bg"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/tomorrow_bt_6"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="明日"
+                android:layout_width="wrap_content"
+                android:background="@drawable/button_bg2"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="8dp">
+    </LinearLayout>
+
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/bg_gray"
+        app:cardUseCompatPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <LinearLayout
+                android:gravity="center"
+                android:background="@color/start_color"
+                android:layout_width="match_parent"
+                android:layout_height="145dp">
+                <TextView
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
+                    android:text="西区207"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/today_bt_7"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:text="今日"
+                android:layout_width="wrap_content"
+                android:background="@drawable/button_bg"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/tomorrow_bt_7"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="明日"
+                android:layout_width="wrap_content"
+                android:background="@drawable/button_bg2"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="8dp">
+    </LinearLayout>
+
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/bg_gray"
+        app:cardUseCompatPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <LinearLayout
+                android:gravity="center"
+                android:background="@color/title_bg"
+                android:layout_width="match_parent"
+                android:layout_height="145dp">
+                <TextView
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
+                    android:text="西区401"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/today_bt_8"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:text="今日"
+                android:layout_width="wrap_content"
+                android:background="@drawable/button_bg"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/tomorrow_bt_8"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="明日"
+                android:layout_width="wrap_content"
+                android:background="@drawable/button_bg2"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="8dp">
+    </LinearLayout>
+
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/bg_gray"
+        app:cardUseCompatPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <LinearLayout
+                android:gravity="center"
+                android:background="@color/google_green"
+                android:layout_width="match_parent"
+                android:layout_height="145dp">
+                <TextView
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
+                    android:text="西区408"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/today_bt_9"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:text="今日"
+                android:layout_width="wrap_content"
+                android:background="@drawable/button_bg"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/tomorrow_bt_9"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="明日"
+                android:layout_width="wrap_content"
+                android:background="@drawable/button_bg2"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
+</ScrollView>
+</LinearLayout>
